@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    label {
+        display: block;
+        margin: 10px 0;
+        color: #333;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+   </style>
+</head>
+<body>
+    <form onsubmit="onsignup(event)">
+        <label for="username">Name</label>
+        <input type="text" name="username" id="username" required/>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required/>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required/>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+
+   <script src="main3.js"></script>
+</body>
+</html>
