@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <form onsubmit="onsignup(event)">
+        <label for="username">Name</label>
+        <input type="text" name="username" id="username" required/>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required/>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required/>
+        
+        <button type="submit">Sign Up</button>
+        
+    </form>
+    
+    <ul id="userList">
+        
+        <li>
+            <span>aman sana-nuaman@gamial.com-123454321</span>
+            <button onclick="onDeleteUser(this)">Delete</button>
+        </li>
+        
+    </ul>
+
+    <script src="main5.js"></script>
+</body>
+</html>
